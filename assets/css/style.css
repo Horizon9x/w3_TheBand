@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    background-color:#ccc;
+    color: yellow;
+}
+h2 {
+    background-color: blueviolet;
+    color: red;
+}
