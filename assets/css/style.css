@@ -1,11 +1,89 @@
+/* reser CSS */
 * {
     padding: 0px;
     margin: 0px;
+        
 }
-h1 {
-    background-color: yellow;
+html {
+    font-family: Helvetica, sans-serif;
 }
-input {
-    color: blue;
-    margin: 4px;
+
+#main {
+
+}
+#header {
+    height: 46px;
+    background-color: #000;   
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block; 
+}
+#nav li {
+    position: relative;  
+
+}
+#nav li a {    
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: inline-block;
+}
+#nav > li > a {
+    text-transform: uppercase;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a  {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);   
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li a { 
+    color: #000;
+    min-width: 160px;
+    padding: 0 12px;
+    line-height: 38px;    
+}
+#nav .down-arrow {
+    font-size: 14px;
+}
+#header .search-block {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+#header .search-block:hover {
+    background-color: #f44336;    
+}
+#header .search-icon {
+    font-size: 18px;
+    color: #fff;
+    line-height: 46px;
+}
+
+
+#slider {
+    min-height: 500px;
+    background-color: bisque;   
+}
+#content {
+
+}
+#footer {
+
 }
