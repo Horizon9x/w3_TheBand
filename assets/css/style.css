@@ -257,6 +257,7 @@ html {
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFade ease 0.5s;
 }
 .modal-close {
     position: absolute;
@@ -318,4 +319,13 @@ html {
 }
 .modal-footer a {    
     color: #2196F3;
+}
+/* modal animation */
+@keyframes modalFade {
+    from {
+        transform: translateY(-140px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
