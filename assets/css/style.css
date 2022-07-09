@@ -16,6 +16,39 @@ html {
 .text-white {
     color: #fff !important;
 }
+.text-center {
+    text-align: center !important;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-1 {
+    width: 100%;
+}
+.col-2 {
+    width: 50%;
+}
+.col-3 {
+    width: calc(100%/3);
+}
+
 
 /* Header and Nav bar  */
 #header {
@@ -146,8 +179,7 @@ html {
     /* overflow: hidden; */
 }
 #content .member-item {
-    float: left;
-    width: calc(100%/3);
+   
     text-align: center;
 }
 #content .member-name {
@@ -191,14 +223,10 @@ html {
 }
 /* Place */
 .places-list {
-    margin: 32px -8px 0; 
-    padding-bottom: 48px;
-}
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-    
+    /* margin: 32px -8px 0; 
+    padding-bottom: 48px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 .place-img {
     width: 100%;
@@ -234,9 +262,9 @@ html {
     background-color: #ccc;
     color:#000;
 }
-#footer {
 
-}
+
+/* Buy tickets Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -289,8 +317,7 @@ html {
 .modal-label {
     display: block;
     font-size: 15px;
-    margin-bottom: 12px;
-    
+    margin-bottom: 12px;    
 }
 .modal-input {
     border: 1px solid #ccc;
@@ -308,7 +335,6 @@ html {
     text-transform: uppercase;
     padding: 18px;
     cursor: pointer;
-
 }
 .modal #buy-tickets:hover {
     opacity: 0.9;
@@ -328,4 +354,37 @@ html {
     to {
         transform: translateY(0);
     }
+}
+/* Contact */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form {
+    font-size: 15px;   
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+   
+
+}
+.contact-form .submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    float: right;
+    
+}
+#footer {
+
 }
