@@ -13,18 +13,18 @@
     <div id="header">
         <!-- nav -->
         <ul id="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Band</a></li>
-            <li><a href="">Tour</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li>
-                <a href="">More
+                <a href="#">More
                     <i class="ti-angle-down down-arrow"></i>
                 </a>                
                 <ul class="subnav">
-                    <li><a href="">Merchandise</a></li>
-                    <li><a href="">Extras</a></li>
-                    <li><a href="">Media</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
                 </ul>
             </li>
         </ul>
@@ -43,7 +43,7 @@
 
     <div id="content">
         <!-- About  -->
-        <div class="content-section">
+        <div id="band" class="content-section">
             <h2 class="section-heading">THE BAND</h2>
             <p class="section-subheading">We love music</p>
             <p class="about-content">
@@ -66,7 +66,7 @@
             </div>
         </div>
         <!-- Tour  -->
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
             <div class="content-section">
                 <h2 class="section-heading text-white">TOUR DATES</h2>
                 <p class="section-subheading text-white">Remember to book your tickets!</p>
@@ -84,7 +84,7 @@
                             <h3 class="place-heading">New York</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            <button class="btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="col col-3">
@@ -93,7 +93,7 @@
                             <h3 class="place-heading">New York</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            <button class="btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="col col-3">
@@ -102,7 +102,7 @@
                             <h3 class="place-heading">New York</h3>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            <button class="btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     
@@ -110,7 +110,7 @@
             </div>
         </div>
         <!-- Contact  -->
-        <div class="content-section">
+        <div id="contact" class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-subheading">Fan? Drop a note!</p>           
                
@@ -136,16 +136,27 @@
                             <input type="text" name="" id="" class="form-control" placeholder="Message" required>
                         </div>
                     </div>
-                    <input class="submit-btn mt-16" type="submit" value="SEND">
+                    <input class="btn mt-16 fl-right" type="submit" value="SEND">
                 </form>
             </div>
            </div>
         </div>
+        <!-- End Contact -->
+        <div class="map-section">
+            <img src="../assets/img/map.jpg" alt="Map">
+        </div>
     </div>
-
+    <!-- Footer -->
     <div id="footer">
-        
-
+        <div class="social-network">
+            <a href=""><i class="ti-facebook"></i></a>
+            <a href=""><i class="ti-instagram"></i></a>
+            <a href=""><i class="ti-youtube"></i></a>
+            <a href=""><i class="ti-pinterest"></i></a>
+            <a href=""><i class="ti-twitter"></i></a>
+            <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copy-right">Powered by <a href="">w3.css</a></p>    
     </div>
 </div>
 <div class="modal js-modal">

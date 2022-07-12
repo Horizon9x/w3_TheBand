@@ -6,6 +6,7 @@
 }
 html {
     font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 #main {
 
@@ -48,7 +49,9 @@ html {
 .col-3 {
     width: calc(100%/3);
 }
-
+.fl-right {
+    float: right !important;
+}
 
 /* Header and Nav bar  */
 #header {
@@ -149,10 +152,12 @@ html {
 
 }
 #content .content-section {
-    width: 800px;
+    width: 800px; 
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 16px 112px;
+    
 }
 #content .section-heading {
     font-size: 30px;
@@ -222,11 +227,8 @@ html {
     margin-top: -3px;
 }
 /* Place */
-.places-list {
-    /* margin: 32px -8px 0; 
-    padding-bottom: 48px; */
-    margin-top: 32px;
-    margin-bottom: 48px;
+.places-list {   
+    margin-top: 32px;  
 }
 .place-img {
     width: 100%;
@@ -250,19 +252,20 @@ html {
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn {
+.btn {
     color: #fff;
     background-color: #000;
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
-.place-buy-btn:hover {
+.btn:hover {
     background-color: #ccc;
     color:#000;
+    cursor: pointer;
 }
-
 
 /* Buy tickets Modal */
 .modal {
@@ -374,17 +377,29 @@ html {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
-   
-
 }
-.contact-form .submit-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 16px;
-    border: 1px solid #000;
-    float: right;
-    
+/* Map section  */
+.map-section img {
+    width: 100%;
 }
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-network {
+    font-size: 24px;
+}
+#footer .social-network a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .social-network a:hover {
+    color: rgba(0, 0, 0, 0.4);    
+}
+#footer .copy-right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a {
+    color: rgba(0, 0, 0, 0.6);
 }
